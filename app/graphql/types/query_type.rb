@@ -7,7 +7,8 @@ module Types
     field :test_field, String, null: false,
                                description: 'An example field added by the generator'
     def test_field
-      'App Bridgeの認証に成功しました'
+      'おめでとうございます！カスタムアプリの環境構築が完了しました。
+      素敵な開発ライフを応援しています😆'
     end
   end
 end

@@ -9,6 +9,7 @@ import { authenticatedFetch } from '@shopify/app-bridge-utils';
 
 import enTranslations from '@shopify/polaris/locales/en.json';
 import React from 'react';
+import TestData from './TestData';
 
 export default function App() {
   const client = new ApolloClient({
@@ -26,21 +27,10 @@ export default function App() {
         <Page>
           <EmptyState>
             Shopify App with Rails and React ⚡️
+            <TestData/>
           </EmptyState>
         </Page>
       </ApolloProvider>
     </AppProvider>
   );
 }
-// import React from "react";
-// import PropTypes from "prop-types";
-// class App extends React.Component {
-//   render () {
-//     return (
-//       <React.Fragment>
-//       </React.Fragment>
-//     );
-//   }
-// }
-
-// export default App
